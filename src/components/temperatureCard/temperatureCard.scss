@@ -1,0 +1,21 @@
+.temperature-card-container {
+  .temperature-card {
+    width: 100%;
+
+    .temp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      color: #202445;
+      font-size: 24px;
+      font-weight: 500;
+
+      li {
+        color: #404040;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}

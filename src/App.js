@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { ConfigProvider } from "antd";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import LandingPage from "./pages/landingPage/landingPage";
+import TourDetailPage from "./pages/tourDetailPage/tourDetailPage";
+import AllToursPage from "./pages/allTours/allToursPage";
+import MyToursPage from "./pages/myToursPage/myToursPage";
+import ConfirmTourPage from "./pages/confirmTourPage/confirmTourPage";
+import Navbar from "./components/navbar/Navbar";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#F16B51",
+        },
+      }}
+    >
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="tour-detail" element={<TourDetailPage />} />
+        <Route path="all-tours" element={<AllToursPage />} />
+        <Route path="my-tours" element={<MyToursPage />} />
+        <Route path="confirm-tour" element={<ConfirmTourPage />} />
+      </Routes>
+    </ConfigProvider>
   );
-}
+};
 
 export default App;

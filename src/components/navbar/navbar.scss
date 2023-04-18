@@ -1,0 +1,31 @@
+.nav--cantainer {
+  margin: 2% 3%;
+  display: flex;
+  justify-content: space-between;
+
+  .brand-logo {
+    width: 85px;
+
+    .brand-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .nav-links {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    .main-link {
+      text-decoration: none;
+      font-size: 18px;
+      color: #202445;
+    }
+
+    .main-link--active {
+      text-decoration: none;
+      font-size: 18px;
+      border-bottom: 2px solid #f16b51;
+    }
+  }
+}

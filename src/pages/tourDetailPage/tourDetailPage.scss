@@ -1,0 +1,153 @@
+.tour-detail-container {
+  margin: 0 3%;
+
+  .detail-heading {
+    color: #202445;
+    font-size: 40px;
+    line-height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+  }
+
+  .tour-meta {
+    color: #797c9a;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2px;
+
+    .tour-meta-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      .tour-meta-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .tour-imgs-grid {
+    margin-top: 2%;
+    display: flex;
+
+    .left-side {
+      width: 50%;
+
+      .tour-img-left {
+        width: 95%;
+        height: 100%;
+
+        border-radius: 10px;
+      }
+    }
+
+    .right-side {
+      width: 50%;
+
+      display: flex;
+      justify-self: flex-start;
+      align-items: last baseline;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .tour-img-right {
+        width: 45%;
+
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .tour-description {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2%;
+
+    text-align: center;
+    color: #404040;
+    font-size: 14px;
+
+    padding: 2px;
+  }
+
+  .whats-included {
+    .heading {
+      color: #202445;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .included-things {
+      .things-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .thing-heading {
+          width: 40%;
+          color: #202020;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .thing-detail {
+          color: #202020;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .thing-detail-checks-container {
+          width: 50%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem;
+
+          .thing-detail-checks {
+            color: #202020;
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            gap: 1rem;
+
+            .check-icon {
+              color: #f16b51;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .itenarary-section {
+    margin-top: 2%;
+    .heading {
+      color: #202445;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .detail-btn-container {
+      margin-top: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .detail-book-now-btn {
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 600;
+        width: 20%;
+        padding: 12px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

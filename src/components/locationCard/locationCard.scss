@@ -1,0 +1,72 @@
+.location-card-container {
+  .location-card-container-card {
+    width: 100%;
+  }
+
+  .ant-card-body {
+    padding: 10px 14px 17px 14px;
+    color: #999999;
+
+    .ant-card-meta-title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .footer-card {
+      width: 100%;
+      height: 30px;
+      margin-top: 12px;
+
+      .view-detail-button {
+        width: 100%;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-detail {
+        display: flex;
+        gap: 2rem;
+        font-size: 14px;
+        font-weight: 400;
+
+        .footer-detail-element {
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+
+      .myBookedLocationCard-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .myBookedLocationCard-footer-icon {
+          font-size: 24px;
+          color: #f16b51;
+        }
+        .myBookedLocationCard-footer-icon:hover {
+          opacity: 0.7;
+        }
+
+        .myBookedLocationCard-footer-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .modal-test {
+    .ant-modal-content {
+      color: purple;
+    }
+  }
+}
